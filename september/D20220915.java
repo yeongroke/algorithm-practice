@@ -26,14 +26,16 @@ public class D20200915 {
     static int[] solution(int n, int s) {
         if(n > s)
             return new int[]{-1};
-
+        
         int[] answer = new int[n];
 
-        for(int i=0; i<answer.length; i++)
-            answer[i] = s / n;
+        int maxIndex = s%n;
 
-        for(int i=0; i<s%n; i++)
-            answer[i] ++;
+        for(int i=0; i<answer.length; i++) {
+            answer[i] = s/n;
+            if(i < maxIndex)
+                answer[i] ++;
+        }
 
         Arrays.sort(answer);
 
