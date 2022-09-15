@@ -2,6 +2,9 @@ package daliy_coding.september;
 
 import java.util.Arrays;
 
+/*
+* 프로그래머스 최고의집합
+* */
 public class D20200915 {
 
     static int inputA = 2;
