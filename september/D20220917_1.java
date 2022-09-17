@@ -4,7 +4,6 @@ package daliy_coding.september;
 * 프로그래머스 피보나치 수
 * */
 public class D20220917_1 {
-
     // solution method
     static int solution(int n) {
         int[] answer = new int[n+1];
